@@ -209,7 +209,7 @@
       .premium img {
         height: 240px;
       }
-}
+    }
   </style>
 </head>
 <body>
@@ -232,17 +232,15 @@
     </p>
   </section>
 
- 
-  <div class="card">
-  <img src="bouquet1.jpg" alt="Bouquet 01">
-  <div class="card-content">
-    <h3>Bouquet 01</h3>
-    <div class="price">À partir de 50 €</div>
-    <button class="btn" onclick="commander('Bouquet 01')">
-      Commander sur WhatsApp
-    </button>
-  </div>
-</div>
+  <div class="container">
+    <div class="card">
+      <img src="bouquet1.jpg" alt="Bouquet 01">
+      <div class="card-content">
+        <h3>Bouquet 01</h3>
+        <div class="price">À partir de 50 €</div>
+        <button class="btn" onclick="commander('Bouquet 01')">Commander sur WhatsApp</button>
+      </div>
+    </div>
 
     <div class="card">
       <img src="bouquet2.jpg" alt="Bouquet 02">
@@ -290,15 +288,13 @@
     </div>
 
 <div class="card">
-
-<div class="card"> 
-  <img src="bouquet20.png" alt="Bouquet 07"> 
-  <div class="card-content"> 
-    <h3>Bouquet 07</h3> 
-    <div class="price">À partir de 35 €</div> 
-    <button class="btn" onclick="commander('Bouquet 07')">Commander sur WhatsApp</button> 
-  </div> 
-</div> 
+      <img src="bouquet20.png" alt="Bouquet 07">
+      <div class="card-content">
+        <h3>Bouquet 07</h3>
+        <div class="price">À partir de 35 €</div>
+        <button class="btn" onclick="commander('Bouquet 07')">Commander sur WhatsApp</button>
+      </div>
+    </div>
 
 <div class="card">
       <img src="bouquet21.png" alt="Bouquet 08">
@@ -828,7 +824,6 @@ style="display:inline-block; margin:10px;">
       const url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
       window.open(url, "_blank");
     }
-  
   </script>
 
 </body>
