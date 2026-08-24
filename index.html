@@ -331,14 +331,23 @@
 
 </div>
 
-    <div class="card">
-      <img src="bouquet5.jpg" alt="Bouquet 04">
-      <div class="card-content">
-        <h3>Bouquet 04</h3>
-        <div class="price">À partir de 35 €</div>
-        <button class="btn" onclick="commander('Bouquet 04')">Commander sur WhatsApp</button>
-      </div>
-    </div>
+   <div class="card">
+
+  <div class="jf-carousel">
+    <img src="bouquet5.jpg" class="jf-photo jf-active" alt="Bouquet 04">
+    <img src="bouquet5-2.jpeg" class="jf-photo" alt="Bouquet 04">
+
+    <button type="button" class="jf-arrow jf-left" onclick="jfChangePhoto(this,-1)">‹</button>
+    <button type="button" class="jf-arrow jf-right" onclick="jfChangePhoto(this,1)">›</button>
+  </div>
+
+  <div class="card-content">
+    <h3>Bouquet 04</h3>
+    <div class="price">À partir de 35 €</div>
+    <button class="btn" onclick="commander('Bouquet 04')">Commander sur WhatsApp</button>
+  </div>
+
+</div>
 
     <div class="card">
       <img src="bouquet6.jpg" alt="Bouquet 05">
