@@ -877,6 +877,20 @@ style="display:inline-block; margin:10px;">
       const url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
       window.open(url, "_blank");
     }
+     function changerPhoto(bouton, direction) {
+    const slider = bouton.closest('.slider');
+    const photos = slider.querySelectorAll('img');
+
+    let index = Array.from(photos).findIndex(photo =>
+      photo.classList.contains('active')
+    );
+
+    photos[index].classList.remove('active');
+
+    index = (index + direction + photos.length) % photos.length;
+
+    photos[index].classList.add('active');
+  }
   </script>
 
 </body>
