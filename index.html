@@ -461,13 +461,22 @@
 </div>
 
     <div class="card">
-      <img src="bouquet8.jpg" alt="Roses Rouges">
-      <div class="card-content">
-        <h3>Roses Rouges</h3>
-        <div class="price">À partir de 3 € l'unité</div>
-        <button class="btn" onclick="commander('Roses Rouges')">Commander sur WhatsApp</button>
-      </div>
-    </div>
+
+  <div class="jf-carousel">
+    <img src="bouquet8.jpg" class="jf-photo jf-active" alt="Roses Rouges">
+    <img src="bouquet8-2.JPG" class="jf-photo" alt="Roses Rouges">
+
+    <button type="button" class="jf-arrow jf-left" onclick="jfChangePhoto(this,-1)">‹</button>
+    <button type="button" class="jf-arrow jf-right" onclick="jfChangePhoto(this,1)">›</button>
+  </div>
+
+  <div class="card-content">
+    <h3>Roses Rouges</h3>
+    <div class="price">À partir de 3 € l'unité</div>
+    <button class="btn" onclick="commander('Roses Rouges')">Commander sur WhatsApp</button>
+  </div>
+
+</div>
 
  <div class="card">
       <img src="bouquet16.png" alt="Bouquet 11">
